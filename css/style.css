@@ -1,0 +1,74 @@
+/* CSS file: style.css */
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 5px; /* Reduce gap between nav items on smaller screens */
+    }
+
+    nav ul li a {
+        padding: 8px 15px; /* Adjust padding for nav links on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on very small screens */
+        gap: 5px;
+    }
+
+    nav ul li {
+        display: block; /* Make nav items block-level on very small screens */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Adjust padding for nav links on very small screens */
+    }
+}

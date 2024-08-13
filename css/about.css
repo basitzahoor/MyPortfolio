@@ -1,0 +1,57 @@
+#about {
+    padding: 20px;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    #about h1 {
+        font-size: 2em; /* Slightly smaller heading for smaller screens */
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    #about p {
+        font-size: 0.9em; /* Slightly smaller text size for smaller screens */
+        margin: 8px 0; /* Adjust margin */
+    }
+
+    .about-content {
+        max-width: 90%; /* Allow the content to take up more space on smaller screens */
+        text-align: center; /* Center-align text on smaller screens for better readability */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #about h1 {
+        font-size: 1.8em; /* Even smaller heading for very small screens */
+        padding: 6px;
+    }
+
+    #about p {
+        font-size: 0.85em; /* Further reduce text size */
+    }
+}
